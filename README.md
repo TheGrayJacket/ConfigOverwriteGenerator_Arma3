@@ -25,17 +25,17 @@
 4. Refer to the [Arma 3 Characters & Gear Encoding Guide](https://community.bistudio.com/wiki/Arma_3:_Characters_And_Gear_Encoding_Guide#Uniform_Configuration) to understand class inheritance.
 5. Download, unpack and drop this project into your Arma 3 mission folder (default path: C:\Users\<user>\Documents\Arma 3 - Other Profiles\<profile>\missions )
 6. Edit `config.cpp` located in the project file (mentioned in 5.) to configure parameters.
-7. Open 'ConfigOverrideGenerator' mission in Editor (if you can't see it, restart Arma)
+7. Open 'ConfigOverrideGenerator' mission in Editor (if you can't see it, restart Arma) <br/>
 
-![ConfigOverrideGenerator](https://drive.usercontent.google.com/download?id=1-pfGO6jN4Er6m6Fhsy3NVGe5TTp4HJiH)
-8. Right click anywhere on the ground (in editor) and select "Play from here".
+![ConfigOverrideGenerator](https://drive.usercontent.google.com/download?id=1-pfGO6jN4Er6m6Fhsy3NVGe5TTp4HJiH)<br/>
+8. Right click anywhere on the ground (in editor) and select "Play from here".<br/>
  
-![ConfigOverrideGenerator](https://drive.usercontent.google.com/download?id=1-cXM53bmFRPJD8dB16_oUUVD6fZ1fswF)
+![ConfigOverrideGenerator](https://drive.usercontent.google.com/download?id=1-cXM53bmFRPJD8dB16_oUUVD6fZ1fswF)<br/>
 9. Open 'output.txt' in 'Arma 3 - Other Profiles\<profile>\missions\ConfigOverrideGenerator.VR'
 10. Paste the clipboard (CTRL+V)
-	- If clipboard is empty, go back to editor, press ESC, run `[ ] execVM "init.sqf"` in the debug console and try pasting to 'output.txt' again.
+	- If clipboard is empty, go back to editor, press ESC, run `[ ] execVM "init.sqf"` in the debug console and try pasting to 'output.txt' again.<br/>
  
-![ConfigOverrideGenerator](https://drive.usercontent.google.com/download?id=1-ZCoZohJ06I2iEGPiDZJ5PVLmvV6Vp1A)
+![ConfigOverrideGenerator](https://drive.usercontent.google.com/download?id=1-ZCoZohJ06I2iEGPiDZJ5PVLmvV6Vp1A)<br/>
 	- If clibboard is still empty, enable debugging options in 'config.cpp', run `[ ] execVM "init.sqf"` again and then check your latest RPT for errors (default path for client RPT storage: C:\Users\<user>\AppData\Local\Arma 3 )
 11. Once you have your 'output.txt' set up, run 'convertToCode.exe' (antiviruses don't like this file. It's safe.)
 12. You should now have a file with a complete code that you can use to override original values. All you need to do is to put it in your mod (and make sure your mod is loaded after all other mods that it can affect)
