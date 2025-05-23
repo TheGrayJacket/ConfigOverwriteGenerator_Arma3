@@ -1,0 +1,3 @@
+[""U_C_Commoner2_1"",""Uniform_Base"",[[[[""ItemInfo"",""UniformItem""]],""containerClass"",""Supply80""],[[[""ItemInfo"",""UniformItem""]],""mass"",""30""]]]
+[""U_C_Commoner2_2"",""Uniform_Base"",[[[[""ItemInfo"",""UniformItem""]],""containerClass"",""Supply80""],[[[""ItemInfo"",""UniformItem""]],""mass"",""30""]]]
+[""U_C_Commoner2_3"",""Uniform_Base"",[[[[""ItemInfo"",""UniformItem""]],""containerClass"",""Supply80""],[[[""ItemInfo"",""UniformItem""]],""mass"",""30""]]]

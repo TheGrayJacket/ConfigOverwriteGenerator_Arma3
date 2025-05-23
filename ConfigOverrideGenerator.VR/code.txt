@@ -1,0 +1,27 @@
+class U_C_Commoner2_1 : Uniform_Base
+{
+	//empty
+	class ItemInfo : UniformItem
+	{
+		containerClass = Supply80;
+		mass = 30;
+	};
+};
+class U_C_Commoner2_2 : Uniform_Base
+{
+	//empty
+	class ItemInfo : UniformItem
+	{
+		containerClass = Supply80;
+		mass = 30;
+	};
+};
+class U_C_Commoner2_3 : Uniform_Base
+{
+	//empty
+	class ItemInfo : UniformItem
+	{
+		containerClass = Supply80;
+		mass = 30;
+	};
+};
