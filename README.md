@@ -1,3 +1,10 @@
+After verifying that the code works properly, I finally have a version I can share
+There are still things to be done:
+1. Support for vehicles, backpacks, vests (as long as a valid filter is added to _supportedTypes, the code should be able to work)
+2. Executable file that converts 'output.txt' into 'code.txt'
+3. Cleanup of config.cpp - move all comments to readme and provide detailed instructions (with screenshots!)
+4. Create test config.cpp (and put them in a folder /configs) to verify that code works for objects mentioned in 1.
+
 # ConfigOverrideGenerator (Arma 3)
 
 **ConfigOverrideGenerator** is a script-based tool for **Arma 3** modders and mission makers. It generates class-based attribute override instructions for config files, making it easier to mass-modify attributes like `containerClass` or `mass` on uniforms, backpacks, and other gear items.
