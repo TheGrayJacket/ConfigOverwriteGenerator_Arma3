@@ -26,12 +26,15 @@
 5. Download, unpack and drop this project into your Arma 3 mission folder (default path: C:\Users\<user>\Documents\Arma 3 - Other Profiles\<profile>\missions )
 6. Edit `config.cpp` located in the project file (mentioned in 5.) to configure parameters.
 7. Open 'ConfigOverrideGenerator' mission in Editor (if you can't see it, restart Arma)
+
 ![ConfigOverrideGenerator](https://drive.usercontent.google.com/download?id=1-pfGO6jN4Er6m6Fhsy3NVGe5TTp4HJiH)
 8. Right click anywhere on the ground (in editor) and select "Play from here".
+ 
 ![ConfigOverrideGenerator](https://drive.usercontent.google.com/download?id=1-cXM53bmFRPJD8dB16_oUUVD6fZ1fswF)
 9. Open 'output.txt' in 'Arma 3 - Other Profiles\<profile>\missions\ConfigOverrideGenerator.VR'
 10. Paste the clipboard (CTRL+V)
 	- If clipboard is empty, go back to editor, press ESC, run `[ ] execVM "init.sqf"` in the debug console and try pasting to 'output.txt' again.
+ 
 ![ConfigOverrideGenerator](https://drive.usercontent.google.com/download?id=1-ZCoZohJ06I2iEGPiDZJ5PVLmvV6Vp1A)
 	- If clibboard is still empty, enable debugging options in 'config.cpp', run `[ ] execVM "init.sqf"` again and then check your latest RPT for errors (default path for client RPT storage: C:\Users\<user>\AppData\Local\Arma 3 )
 11. Once you have your 'output.txt' set up, run 'convertToCode.exe' (antiviruses don't like this file. It's safe.)
@@ -46,7 +49,7 @@ TROUBLESHOOTING: Make sure all lines in 'output.txt' are in similar format (eg. 
 
 Edit the following values in `config.cpp`:
 
-\`\`\`sqf
+```sqf
 
 // Object category to target: "uniform", "backpack", etc.
 COG_itemCategory = "uniform";
@@ -74,7 +77,7 @@ COG_valueSetTypes = ["raiseTo", "lowerTo"];
 // If you want to set value of classname for any classname, use: "setTo"
 // This does not work for strings (defaults to "setTo"), but if a string is a combination of text and number (eg. "Supply80") it should work.
 
-\`\`\`
+```
 
 > You can output multiple elements when arrays are set up properly - make sure they are of the same size
 
@@ -82,7 +85,7 @@ COG_valueSetTypes = ["raiseTo", "lowerTo"];
 
 ## 🔍 Additional Filtering
 
-\`\`\`sqf
+```sqf
 // If you want to skip specific objects, add their classnames to this array:
 COG_exceptions = ["Uniform_Base"];
 
@@ -91,18 +94,18 @@ COG_exceptions = ["Uniform_Base"];
 COG_customFilter = {
     true // Replace with your custom condition
 };
-\`\`\`
+```
 
 ---
 
 ## 🐞 Debugging
 
-\`\`\`sqf
+```sqf
 COG_debugLog = true;     // Enable verbose logging via diag_log
 COG_debugLimit = true;   // Limit the number of processed classes
 COG_skipXLoops = 400;    // Skip initial X loops
 COG_displayXLoops = 3;   // Display only X loops (after COG_skipXLoops)
-\`\`\`
+```
 
 ---
 
@@ -110,7 +113,7 @@ COG_displayXLoops = 3;   // Display only X loops (after COG_skipXLoops)
 
 The script outputs an array for each matching class:
 
-\`\`\`sqf
+```sqf
 [
   "ClassName",
   "ParentClass",
@@ -119,7 +122,7 @@ The script outputs an array for each matching class:
     ...
   ]
 ]
-\`\`\`
+```
 
 This format is compatible with post-processing tools, such as a Python script that generates final `code.txt` files.
 
