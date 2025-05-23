@@ -1,0 +1,13 @@
+////description.ext
+class CfgFunctions {
+    class COG {
+        class Main {
+            file = "functions";
+            class adjustValue {};
+            class shouldSkip {};
+            class generateAttributePatch {};
+			class splitTextWithNumber {};
+			class joinTextWithNumber {};
+        };
+    };
+};
